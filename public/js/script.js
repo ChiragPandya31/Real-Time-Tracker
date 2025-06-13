@@ -22,7 +22,7 @@ if (navigator.geolocation) {
 const map = L.map("map").setView([0, 0], 16);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution: "&copy;  Chirag",
+  attribution: "&copy;  Chirag Pandya",
 }).addTo(map);
 
 const markers = {};
@@ -43,4 +43,3 @@ socket.on("user-disconnected", (id) => {
     delete markers[id];
   }
 })
-
